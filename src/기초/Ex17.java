@@ -16,6 +16,7 @@ public class Ex17 {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("몇행 몇열의 달팽이 직사각형을 그리고싶으세요  : ");
 		int num = scan.nextInt();
+		scan.close();
 		int[][] arr = new int[num][num];
 		int n = 1;
 		int x = 0;
