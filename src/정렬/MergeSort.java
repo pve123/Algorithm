@@ -14,7 +14,6 @@ public class MergeSort {
 		int k = l;
 
 		while (i <= middle && j <= r) {
-
 			if (arr[i] < arr[j]) {
 				mergesort[k] = arr[i];
 				i++;
@@ -34,10 +33,10 @@ public class MergeSort {
 				mergesort[k] = arr[t];
 			}
 		}
-
 		for (int t = l; t <= r; t++) {
 			arr[t] = mergesort[t];
 		}
+
 	}
 
 	public void mergefirst(int[] arr, int l, int r) {

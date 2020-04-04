@@ -17,17 +17,21 @@ public class QuickSort {
 				right--;
 
 			if (left <= right) {
-				int tmp = arr[left];
+
+				int temp = arr[left];
 				arr[left] = arr[right];
-				arr[right] = tmp;
+				arr[right] = temp;
 				left++;
 				right--;
+
 			}
 
+			if (l < right)
+				quick(arr, l, right);
+			if (r > left)
+				quick(arr, left, r);
 		} while (left <= right);
-		
-		if(l < right) quick(arr, l, right);
-		if(r > left) quick(arr, left, r);
+
 	}
 
 	public static void main(String[] args) {
